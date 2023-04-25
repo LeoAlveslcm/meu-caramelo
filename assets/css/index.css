@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Sarala', sans-serif;
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Page Header */
+
+header {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 98rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 8rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0.8rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.account li:nth-child(1) {
+    text-decoration: underline white;
+}
+
+.account li:nth-child(2) a {
+    border: white 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem 01rem 0.5rem 1rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.box {
+    position: absolute;
+    width: 766px;
+    height: 236px;
+    z-index: -1000;
+
+    background: #8C52FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    transform: rotate(-4.77deg);
+}
+
+.box1 {
+    margin-left: 131px;
+    top: -89.31px; 
+}
+
+.box2 {
+    margin-left: 106px;
+    top: -106.31px;
+}
+
+/* Introduction Section */
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+#intro .container {
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 4rem;
+    color: #3A00AD;
+}
+
+.text p {
+    font-size: 2rem;
+    color: #8C52FF;
+    line-height: 2.5rem;
+}
+
+/*  Registration Section Information */
+
+#section1 .container {
+    flex-direction: column;
+}
+
+#section1 .container .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section1 .container .head h1 {
+    font-size: 3rem;
+}
+
+.button {
+    width: 13rem;
+    height: 3.5rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+#section1 button {
+    color: #3A00AD;
+    background-color: #FFFFFF;
+}
+
+#section1 a {
+    border: #3A00AD 1px solid;
+}
+
+/* Cards */
+
+.cards-section {
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.3rem;
+}
+
+.card {
+    width: 266px;
+    height: 304px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.card-white p {
+    text-align: center;
+    color: #3A00AD;
+}
+
+.card-purple {
+    background-color: #8C52FF;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.card-purple p {
+    color: #FFFFFF;
+    text-align: start;
+    margin-bottom: 16rem;
+    margin-left: 2rem;
+}
+
+.dog {
+    position: absolute;
+    margin-top: 18rem;
+    margin-left: -2rem;
+
+}
+
+.picture-boy {
+    position: absolute;
+    margin-left: 12rem;
+}
