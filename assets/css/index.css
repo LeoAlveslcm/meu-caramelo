@@ -127,8 +127,7 @@ section {
 }
 
 .button {
-    width: 13rem;
-    height: 3.5rem;
+    padding: 0.6rem 2rem 0.6rem 2rem;
     outline: none;
     cursor: pointer;
     border: none;
@@ -200,3 +199,74 @@ section {
     position: absolute;
     margin-left: 12rem;
 }
+
+/*  Find Friend Section */
+
+#section2 {
+    background-color: #8C52FF;
+    border-bottom: #3A00AD 1px solid;
+    border-top: #3A00AD 1px solid;
+}
+
+#section2 .container {
+    flex-direction: column;
+}
+
+#section2 .container .head {
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section2 .container .head h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+#section2 .container .head p {
+    color: #FFFFFF;
+}
+
+#section2 button {
+    color: #ffffff;
+    background-color: #8C52FF;
+}
+
+#section2 a {
+    border: #FFFFFF 1px solid;
+}
+
+/* Step by step */
+
+.step-by-step {
+    display: flex;
+    align-items: center;
+}
+
+.step-by-step ul {
+    width: 31rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+/*  last Section */
+
+#section3 .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#section3 .container h1 {
+    font-size: 2.2rem;
+    color: #3A00AD;
+}
+
+#section3 .container div {
+    margin-top: 2.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
