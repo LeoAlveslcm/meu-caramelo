@@ -26,8 +26,10 @@ body {
     width: 70%;
     height: 70vh;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 
     background-color: #ffffff;
     box-shadow: 5px 5px 10px #000;
