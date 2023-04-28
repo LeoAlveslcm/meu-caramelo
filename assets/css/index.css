@@ -126,20 +126,18 @@ section {
     font-size: 3rem;
 }
 
-.button {
-    padding: 0.6rem 2rem 0.6rem 2rem;
+.bnt {
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     outline: none;
     cursor: pointer;
     border: none;
-}
-
-#section1 button {
-    color: #3A00AD;
-    background-color: #FFFFFF;
+    font-size: 1.2rem;
 }
 
 #section1 a {
     border: #3A00AD 1px solid;
+    color: #3A00AD;
+    background-color: #FFFFFF;
 }
 
 /* Cards */
@@ -229,13 +227,10 @@ section {
     color: #FFFFFF;
 }
 
-#section2 button {
-    color: #ffffff;
-    background-color: #8C52FF;
-}
-
 #section2 a {
     border: #FFFFFF 1px solid;
+    color: #ffffff;
+    background-color: #8C52FF;
 }
 
 /* Step by step */
