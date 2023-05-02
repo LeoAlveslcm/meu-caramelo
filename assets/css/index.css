@@ -28,19 +28,21 @@ header {
     width: 98rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 header nav {
     display: flex;
     gap: 8rem;
+    align-items: center;
 }
 
 header nav ul li {
     display: inline-block;
     padding: 0.8rem;
     list-style: none;
+    position: relative;
 }
 
 header nav ul li a {
@@ -49,18 +51,46 @@ header nav ul li a {
     position: relative;
 }
 
+.menu-nav a:hover {
+    top: -3px;
+}
+
 .account li:nth-child(1) {
     text-decoration: underline white;
 }
+
+/* Button Create Account*/
 
 .account li:nth-child(2) a {
     border: white 1px solid;
     border-radius: 0.5rem;
     padding: 0.5rem 01rem 0.5rem 1rem;
+    display: block;
 }
+
+.account li:nth-child(2) a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 0;
+    height: 100%;
+    background-color: #7c3dfc;
+    z-index: -1;
+    transition: .2s ease;
+}
+
+.account li:nth-child(2) a:hover::before {
+    width: 100%;
+}
+
+/* ^^^ */
 
 .social-media {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -77,12 +107,12 @@ header nav ul li a {
 }
 
 .box1 {
-    margin-left: 131px;
+    margin-left: -221px;
     top: -89.31px; 
 }
 
 .box2 {
-    margin-left: 106px;
+    margin-left: -196px;
     top: -106.31px;
 }
 
@@ -126,18 +156,48 @@ section {
     font-size: 3rem;
 }
 
+/* Buttons Registration and Finf Friend Hover */
+
 .bnt {
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     outline: none;
     cursor: pointer;
-    border: none;
     font-size: 1.2rem;
+    position: relative;
 }
 
-#section1 a {
+.bnt-cadastrar::after, 
+.bnt-cadastrar::before,
+.bnt-encontrar::after, 
+.bnt-encontrar::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3s ease;
+}
+
+.bnt-cadastrar::after, 
+.bnt-cadastrar::before {
     border: #3A00AD 1px solid;
+}
+
+.bnt-cadastrar:hover::after,
+.bnt-encontrar:hover::after {
+    transform: translate(-2px, -2px);
+}
+
+.bnt-cadastrar:hover::before,
+.bnt-encontrar:hover::before {
+    transform: translate(2px, 2px);
+}
+
+/*  ^^^^ */
+
+#section1 a {
     color: #3A00AD;
-    background-color: #FFFFFF;
 }
 
 /* Cards */
@@ -227,10 +287,13 @@ section {
     color: #FFFFFF;
 }
 
+.bnt-encontrar::after, 
+.bnt-encontrar::before {
+    border: #ffffff 1px solid;
+}
+
 #section2 a {
-    border: #FFFFFF 1px solid;
     color: #ffffff;
-    background-color: #8C52FF;
 }
 
 /* Step by step */

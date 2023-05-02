@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header h1 {
+    font-size: 4rem;
+    color: #3A00AD;
+}
+
+.form-header p {
+    font-size: 2rem;
+    color: #8C52FF;
+    line-height: 2.5rem;
+}
+
+
