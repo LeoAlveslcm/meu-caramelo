@@ -60,40 +60,104 @@
                     </div>
     
                     <div class="input-group">
-                        <div>
-                            <label for="" tabindex="0">
-                                <input type="file" accept="image/*">
-                                <span></span>
+                        <div class="img-div">
+                            <label class="picture" tabindex="0">
+                                <input type="file" accept="image/*" class="picture-input">
+                                <span class="picture-img">Escolha uma imagem</span>
                             </label>
         
                             <div class="input-box">
                                 <label for="name">Apelido</label>
-                                <input id="name" type="text" name="name" placeholder="Digite seu sobrenome">
+                                <input id="name" type="text" name="name" placeholder="Digite o apelido">
+                            </div>
+
+                            <div class="check-box">
+                                <div>
+                                    <input type="radio" id="cat-check" name="animal-check" value="cat-check">
+                                    <label for="cat-check">Gato</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="dog-check" name="animal-check" value="dog-check">
+                                    <label for="dog-check">Cachorro</label>
+                                </div>                                
                             </div>
                         </div>
-                        
-                        <div class="input-box">
-                            <label for="mail">E-mail</label>
-                            <input id="mail" type="text" name="mail" placeholder="Digite seu e-mail">
-                        </div>
+
+                        <div class="address-div">
+                            <div class="double-box">
+                                <div class="input-box">
+                                    <label for="postal-code">CEP</label>
+                                    <input id="postal-code" type="text" name="postal-code" placeholder="Digite o CEP">
+                                </div>
+        
+                                <select name="states" id="states">
+                                    <option value="">AC</option>
+                                    <option value="">AL</option>
+                                    <option value="">AP</option>
+                                    <option value="">AM</option>
+                                    <option value="">BA</option>
+                                    <option value="">CE</option>
+                                    <option value="">DF</option>
+                                    <option value="">ES</option>
+                                    <option value="">GO</option>
+                                    <option value="">MA</option>
+                                    <option value="">MT</option>
+                                    <option value="">MS</option>
+                                    <option value="">MG</option>
+                                    <option value="">PA</option>
+                                    <option value="">PB</option>
+                                    <option value="">PR</option>
+                                    <option value="">PE</option>
+                                    <option value="">PI</option>
+                                    <option value="">RJ</option>
+                                    <option value="">RN</option>
+                                    <option value="">RS</option>
+                                    <option value="">RO</option>
+                                    <option value="">RR</option>
+                                    <option value="">SC</option>
+                                    <option value="">SP</option>
+                                    <option value="">SE</option>
+                                    <option value="">TO</option>
+                                </select>
+                            </div>
+                            
+                            <div class="double-box">
+                                <div class="input-box">
+                                    <label for="address">Endereço</label>
+                                    <input id="address" type="text" name="address" placeholder="Rua, avenida...">
+                                </div>
+            
+                                <div class="input-box">
+                                    <label for="number">Número</label>
+                                    <input id="number" type="text" name="number" placeholder="Digite o número">
+                                </div>
+                            </div>
+            
+                            <div class="input-box">
+                                <label for="complement">Complemento</label>
+                                <input id="complement" type="text" name="complement" placeholder="Ex: Em frente ao...">
+                            </div>
     
-                        <div class="input-box">
-                            <label for="phone-number">Telefone</label>
-                            <input id="phone-number" type="text" name="phone-number" placeholder="(xx) xxxxx-xxxx">
-                        </div>
+                            <div class="double-box">
+                                <div class="input-box">
+                                    <label for="neighborhood">Bairro</label>
+                                    <input id="neighborhood" type="text" name="neighborhood" placeholder="Digite o bairro">
+                                </div>
     
-                        <div class="input-box">
-                            <label for="password">Senha</label>
-                            <input id="password" type="text" name="password" placeholder="Digite seu senha">
-                        </div>
-    
-                        <div class="input-box">
-                            <label for="com-password">Confirme sua senha</label>
-                            <input id="com-password" type="text" name="com-password" placeholder="Digite seu senha novamente">
+                                <div class="input-box">
+                                    <label for="city">Cidade</label>
+                                    <input id="city" type="text" name="city" placeholder="Digite a cidade">
+                                </div>
+                            </div>
+                                
+                            <div class="input-box discription">
+                                <label for="discription">Explique pontos de referência, ou locais onde podemos encontra-lo:</label>
+                                <textarea id="discription" type="text" name="discription"></textarea>
+                            </div>
                         </div>
                     </div>
     
-                    <button class="button"><a href="index.html">Criar Conta</a></button>
+                    <button class="button"><a href="index.html">Cadastrar</a></button>
                 </form>
             </div>
         </div>     

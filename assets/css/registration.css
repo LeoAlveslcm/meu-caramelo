@@ -9,6 +9,13 @@ main .container {
     justify-content: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
 .form-header {
     display: flex;
     justify-content: center;
@@ -26,4 +33,148 @@ main .container {
     line-height: 2.5rem;
 }
 
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
 
+.img-div, .address-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.picture-input {
+    display: none;
+}
+
+.picture {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    background-color: #ddd;
+    border: 2px dashed #aaa;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.picture:hover {
+    color: #777;
+    background-color: #ccc;
+}
+
+.picture-img {
+    max-width: 100%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.double-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input-box input, textarea {
+    margin: 0.6rem 0;
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 3px #000;
+}
+
+select {
+    margin-top: 1.8rem;
+    padding: 5px;
+    height: 3.5rem;
+    width: 6rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 3px #000;
+}
+
+.check-box {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.check-box div {
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.check-box div label {
+    position: relative;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 3px #000;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #8C52FF;
+    color: #ffffff;
+}
+
+.input-box input:hover, 
+textarea:hover, 
+select:hover {
+    background-color: #F8F8F8;
+}
+
+.input-box input:focus-visible, 
+textarea:focus-visible, 
+select:focus-visible {
+    outline: 1px solid #8C52FF;
+}
+
+.input-box input::placeholder, 
+textarea::placeholder, 
+select::placeholder {
+    color: #b1afaf;
+}
+
+.discription textarea {
+    height: 10rem;
+    max-width: 40.5rem;
+}
+
+.input-box label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2E2B2B;
+}
+
+.button {
+    padding: 1.2rem 6.9rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #8C52FF;
+}
+
+.button a {
+    color: #ffffff;
+}
